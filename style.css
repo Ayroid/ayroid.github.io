@@ -19,7 +19,9 @@
 }
 
 @media screen and (max-width: 500px) {
-    
+    .btn{
+        font-size: 10rem;
+    }
 }
 
 .btn:hover{
