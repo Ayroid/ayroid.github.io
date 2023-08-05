@@ -1,19 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content=IE=edge>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <title>Ayroid</title>
+
+    <link rel=stylesheet href=assets/css/style.css>
+
 </head>
 
 <body>
-    <div class="center_div">
-        <button class="btn" id="myButton" type="button" onclick="color_change()"><span>😁</span></button>
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <a href="#main">AYROID</a>
+        </div>
+        <div class="navbar-menu" id="navbar-menu">
+            <ul class="navbar-menu-list" id="navbar-menu-list">
+                <li class="navbar-menu-item">
+                    <a href="#main" class="navbar-menu-link active">HOME</a>
+                </li>
+                <li class="navbar-menu-item">
+                    <a href="#about" class="navbar-menu-link">ABOUT</a>
+                </li>
+                <li class="navbar-menu-item">
+                    <a href="#projects" class="navbar-menu-link">PROJECTS</a>
+                </li>
+                <li class="navbar-menu-item">
+                    <a href="#contact" class="navbar-menu-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <div class="mobile-navbar-container">
+        <div class="mobile-navbar-logo">
+            <a href="#main">AYROID</a>
+            <div class="hamburger" id="hamburger" onclick="toggleNavbar(true)">
+                <img src="assets/logos/hamburger.png" alt="">
+            </div>
+        </div>
+        <div class="mobile-navbar-menu" id="mobile-navbar-menu">
+            <ul class="mobile-navbar-menu-list" id="mobile-navbar-menu-list">
+                <li class="navbar-menu-item" onclick="toggleNavbar(false)">
+                    <a href="#main" class="navbar-menu-link active">HOME</a>
+                </li>
+                <li class="navbar-menu-item" onclick="toggleNavbar(false)">
+                    <a href="#about" class="navbar-menu-link">ABOUT</a>
+                </li>
+                <li class="navbar-menu-item" onclick="toggleNavbar(false)">
+                    <a href="#projects" class="navbar-menu-link">PROJECTS</a>
+                </li>
+                <li class="navbar-menu-item" onclick="toggleNavbar(false)">
+                    <a href="#contact" class="navbar-menu-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container" id="main">
+        <div class="text-container">
+            <div class="name-box">
+                AYUSH SINGH KUSHWAH
+            </div>
+            <div class="divider">
+                <hr class="divider-line">
+                <div class="cross">
+                    <hr class="cross-piece left-cross">
+                    <hr class="cross-piece right-cross">
+                </div>
+                <hr class="divider-line">
+            </div>
+            <div class="text-tags">
+                <p>DEVOPS</p>
+                <p>|</p>
+                <p>FULLSTACK</p>
+                <p>|</p>
+                <p>LINUX</p>
+            </div>
+        </div>
+        <a href="#about" class="down-arrow">
+            <div class="arrow">
+                <hr class="arrow-piece left-piece">
+                <hr class="arrow-piece right-piece">
+            </div>
+            <div class="arrow secondarrow">
+                <hr class="arrow-piece left-piece">
+                <hr class="arrow-piece right-piece">
+            </div>
+        </a>
+    </div>
+    <div class="about container container1" id="about">
+        <div class="about-container">
+            <div class="about-text-container">
+                <h3 class="about-heading">Hey there!</h3>
+                <p class="about-text">
+                    I'm Ayush Singh Kushwah, a pre-final year <strong>BTech CSE DevOps</strong> student at
+                    <strong>University of Petroleum and
+                        Energy Studies</strong>.
+                    <br>
+                    I'm a passionate <strong>Full Stack Developer</strong>, looking forward to creating innovative
+                    solutions to the problems.
+
+                    <br><br>
+
+                    I proudly serve as the <strong>Technical Head</strong> of <strong>UPES Cloud Security
+                        Alliance</strong>, leading and inspiring
+                    fellow students to explore the vast tech landscape & strive to look for ways to make life better
+                    using tech!
+
+                    <br><br>
+
+                    Looking forward to the challenges & underlying opportunies.
+                </p>
+            </div>
+            <div class="about-techstack">
+                <div class="grid-container">
+                    <div class="grid-item double-width">
+                        <img src="assets/logos/html.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/js.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/express.svg" alt="">
+                    </div>
+                    <div class="grid-item double-height">
+                        <img src="assets/logos/java.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/c.png" alt="">
+                    </div>
+                    <div class="grid-item double-width">
+                        <img src="assets/logos/git.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/mongodb.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/css.svg" alt="">
+                    </div>
+                    <div class="grid-item double-width">
+                        <img src="assets/logos/node-js.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/python.svg" alt="">
+                    </div>
+                    <div class="grid-item double-width">
+                        <img src="assets/logos/docker.svg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/logos/ubuntu-100.png" alt="">
+                    </div>
+                    <div class="grid-item" style="color: white;">MORE TO BE MASTERED...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project container container2" id="projects">
+        <div class="project-container">
+            <!-- <div class="project-heading">
+                <h3>PROJECTS</h3>
+                <hr class="project-line">
+            </div> -->
+            <div class="projects">
+                <!-- <div class="plus-button" onclick="projectMorf('projectbtn-1')">
+                    <img id="projectbtn-1" src="assets/logos/plus.png" alt="">
+                </div> -->
+                <div class="project-image">
+                    <img id="csa-website" src="assets/img/Projects/csa web latest.png" alt="">
+                </div>
+                <div class="project-desc">
+                    <div class="project-desc-heading">
+                        <h2>UPES CSA WEBSITE</h2>
+                    </div>
+                    <div class="project-desc-tech">
+                        <img src="assets/logos/html.svg" alt="">
+                        <img src="assets/logos/css.svg" alt="">
+                        <img src="assets/logos/js.svg" alt="">
+                        <img src="assets/logos/node-js.svg" alt="">
+                        <img src="assets/logos/express.svg" alt="">
+                        <img src="assets/logos/mongodb.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <!-- <div class="plus-button" onclick="projectMorf('projectbtn-2')">
+                    <img id="projectbtn-2" src="assets/logos/plus.png" alt="">
+                </div> -->
+                <div class="project-image">
+                    <img id="hackathon" src="assets/img/Projects/hackathon2.0.png" alt="">
+                </div>
+                <div class="project-desc">
+                    <div class="project-desc-heading">
+                        <h2>HACKATHON 2.0</h2>
+                    </div>
+                    <div class="project-desc-tech">
+                        <img src="assets/logos/html.svg" alt="">
+                        <img src="assets/logos/css.svg" alt="">
+                        <img src="assets/logos/js.svg" alt="">
+                        <img src="assets/logos/node-js.svg" alt="">
+                        <img src="assets/logos/express.svg" alt="">
+                        <img src="assets/logos/mongodb.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="wip">
+                <img src="assets/gifs/wip.gif" alt="">
+                <h3>IN PROGRESS...</h3>
+            </div>
+        </div>
+    </div>
+    <div class="holopin container container1">
+        <a href="https://holopin.io/@ayroid" target="_blank">
+            <img class="holopin" src="https://holopin.me/ayroid" alt="@ayroid's Holopin board" />
+        </a>
+    </div>
+    <div class="contact container container2" id="contact">
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/ayush-singh-kushwah-0a42aa221/" target="_blank">
+                <img src="assets/logos/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/Ayroid" target="_blank">
+                <img src="assets/logos/github.svg" alt="">
+            </a>
+        </div>
+        <div class="contact-text">
+            <p>ayushsk0000@gmail.com</p>
+        </div>
+    </div>
+    <script src=assets/js/app.js></script>
 </body>
 
 </html>
